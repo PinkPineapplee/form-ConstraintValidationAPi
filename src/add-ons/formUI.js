@@ -53,13 +53,17 @@ function createFormUI(){
     passwordCInput.type = "text";
     passwordCInput.name = "passwordC";
 
+ const submitBtn = document.createElement("button");
+ submitBtn.type = "submit";
+ submitBtn.className= "submit-btn";
+ submitBtn.textContent= "Finish";
 
 container.append(emailLabel,emailInput);
 container1.append(countryLabel,countryInput,countrySelect,countryOptions);
 container2.append(postalCodeLabel,postalCodeInput);
 container3.append(passwordLabel,passwordInput);
 container4.append(passwordCLabel,passwordCInput);
-  
+  form.append(container,container1,container2,container3,container4, submitBtn)
 
     formDiv.append(form);
 }
