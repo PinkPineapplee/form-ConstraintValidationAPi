@@ -27,36 +27,40 @@ function createFormUI(){
     const countryOptions = document.createElement("option");
 
 //postal code components
- const container = document.createElement("fieldset");
-    const emailLabel = document.createElement("label");
-    emailLabel.textContent = "Email: " ;
+ const container2 = document.createElement("fieldset");
+    const postalCodeLabel = document.createElement("label");
+    postalCodeLabel.textContent = "Postal Code: " ;
 
-    const emailInput = document.createElement("input");
-    emailInput.type = "text";
-    emailInput.name = "email";
+    const postalCodeInput = document.createElement("input");
+    postalCodeInput.type = "text";
+    postalCodeInput.name = "postalCode";
 
 //password components
- const container = document.createElement("fieldset");
-    const emailLabel = document.createElement("label");
-    emailLabel.textContent = "Email: " ;
+ const container3 = document.createElement("fieldset");
+    const passwordLabel = document.createElement("label");
+    passwordLabel.textContent = "Password: " ;
 
-    const emailInput = document.createElement("input");
-    emailInput.type = "text";
-    emailInput.name = "email";
+    const passwordInput = document.createElement("input");
+    passwordInput.type = "text";
+    passwordInput.name = "password";
 
 //password comfirm components
- const container = document.createElement("fieldset");
-    const emailLabel = document.createElement("label");
-    emailLabel.textContent = "Email: " ;
+ const container4 = document.createElement("fieldset");
+    const passwordCLabel = document.createElement("label");
+    passwordCLabel.textContent = "password Confirmation: " ;
 
-    const emailInput = document.createElement("input");
-    emailInput.type = "text";
-    emailInput.name = "email";
+    const passwordCInput = document.createElement("input");
+    passwordCInput.type = "text";
+    passwordCInput.name = "passwordC";
 
 
-
-  
 container.append(emailLabel,emailInput);
+container1.append(countryLabel,countryInput,countrySelect,countryOptions);
+container2.append(postalCodeLabel,postalCodeInput);
+container3.append(passwordLabel,passwordInput);
+container4.append(passwordCLabel,passwordCInput);
+  
+
     formDiv.append(form);
 }
 
