@@ -43,15 +43,17 @@ function createFormUI(){
     const passwordInput = document.createElement("input");
     passwordInput.type = "text";
     passwordInput.name = "password";
+     passwordInput.placeholder = "CH-5000";
 
 //password comfirm components
  const container4 = document.createElement("fieldset");
     const passwordCLabel = document.createElement("label");
     passwordCLabel.textContent = "password Confirmation: " ;
-
+     
     const passwordCInput = document.createElement("input");
     passwordCInput.type = "text";
     passwordCInput.name = "passwordC";
+    passwordCInput.placeholder = "CH-5000";
 
  const submitBtn = document.createElement("button");
  submitBtn.type = "submit";
