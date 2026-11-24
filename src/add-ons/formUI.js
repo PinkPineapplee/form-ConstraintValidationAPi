@@ -13,6 +13,7 @@ function createFormUI(){
     const emailInput = document.createElement("input");
     emailInput.type = "text";
     emailInput.name = "email";
+    emailInput.placeholder = "example@gmail.com"
 
 //country components
  const container1 = document.createElement("fieldset");
@@ -23,6 +24,7 @@ function createFormUI(){
     countryInput.name = "country";
     const countryInput = document.createElement("input");
     countryInput.type = "text";
+    countryInput.placeholder = "japan";
 
     const countryOptions = document.createElement("option");
 
@@ -34,6 +36,7 @@ function createFormUI(){
     const postalCodeInput = document.createElement("input");
     postalCodeInput.type = "text";
     postalCodeInput.name = "postalCode";
+    postalCodeInput.placeholder = "CH-5000";
 
 //password components
  const container3 = document.createElement("fieldset");
@@ -43,7 +46,7 @@ function createFormUI(){
     const passwordInput = document.createElement("input");
     passwordInput.type = "text";
     passwordInput.name = "password";
-     passwordInput.placeholder = "CH-5000";
+    passwordInput.placeholder = "30rdaEDS#$21"
 
 //password comfirm components
  const container4 = document.createElement("fieldset");
@@ -53,18 +56,19 @@ function createFormUI(){
     const passwordCInput = document.createElement("input");
     passwordCInput.type = "text";
     passwordCInput.name = "passwordC";
-    passwordCInput.placeholder = "CH-5000";
+    passwordCInput.placeholder = "30rdaEDS#$21"
+    
 
  const submitBtn = document.createElement("button");
  submitBtn.type = "submit";
  submitBtn.className= "submit-btn";
  submitBtn.textContent= "Finish";
 
-container.append(emailLabel,emailInput);
-container1.append(countryLabel,countryInput,countrySelect,countryOptions);
-container2.append(postalCodeLabel,postalCodeInput);
-container3.append(passwordLabel,passwordInput);
-container4.append(passwordCLabel,passwordCInput);
+  container.append(emailLabel,emailInput);
+  container1.append(countryLabel,countryInput,countrySelect,countryOptions);
+  container2.append(postalCodeLabel,postalCodeInput);
+  container3.append(passwordLabel,passwordInput);
+  container4.append(passwordCLabel,passwordCInput);
   form.append(container,container1,container2,container3,container4, submitBtn)
 
     formDiv.append(form);
